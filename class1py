@@ -1,0 +1,36 @@
+class Bike:
+    def __init__(self, brand, color, price, name, engine):
+        self.brand = brand
+        self.color = color
+        self.price = price
+        self.name = name
+        self.engine = engine
+
+
+bike1 = Bike("Royal Enfield", "Silver Chrome", 370000, "Continental GT 650", "648cc")
+
+
+bike2 = Bike("Kawasaki", "Green", 1800000, "ZX-10R", "998cc")
+
+
+
+bike3 = Bike("Bajaj", "Blue", 70000, "Platina", "100cc")
+
+
+
+bike4 = Bike("Yamaha", "Black", 150000, "RX100", "98cc")
+
+
+
+bike5 = Bike("Honda", "Black", 90000, "Shine", "125cc")
+
+bike_list =[]
+bike_list.append(bike1)
+bike_list.append(bike2)
+bike_list.append(bike3)
+bike_list.append(bike4)
+bike_list.append(bike5)
+
+for obj in bike_list:
+    if obj.name == "Continental GT 650" :
+        print("bike name is ",obj.name)
